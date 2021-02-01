@@ -110,7 +110,7 @@
 #define DEAD_BEEF                       0xDEADBEEF                              /**< Value used as error code on stack dump, can be used to identify stack location on stack unwind. */
 
 #define BATTERY_TIMER_INTERVAL          APP_TIMER_TICKS(60000)                  /**< Battery timer interval (60000 ms). */
-#define SAADC_TIMER_INTERVAL            APP_TIMER_TICKS(100)                    /**< Saadc sampling timer interval (200 ms). */
+#define SAADC_TIMER_INTERVAL            APP_TIMER_TICKS(200)                    /**< Saadc sampling timer interval (200 ms). */
 
 NRF_BLE_GATT_DEF(m_gatt);                                                       /**< GATT module instance. */
 NRF_BLE_QWR_DEF(m_qwr);                                                         /**< Context for the Queued Write module.*/
@@ -129,7 +129,7 @@ static ble_uuid_t m_adv_uuids[] =                                               
 };
 
 // Converting the saadc result to a voltage value (mv)
-// RESULT = [V(P) – V(N)] * GAIN/REFERENCE * 2(RESOLUTION - m)
+// RESULT = [V(P) â€“ V(N)] * GAIN/REFERENCE * 2(RESOLUTION - m)
 // if CONFIG.MODE=SE (m=0)| if CONFIG.MODE=Diff (m=1).
 // Source : https://infocenter.nordicsemi.com/index.jsp?topic=%2Fps_nrf52840%2Fsaadc.html&cp=4_0_0_5_22_2&anchor=saadc_digital_output
 
