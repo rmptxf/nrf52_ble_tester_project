@@ -15,7 +15,6 @@ $ npm install
 ```sh
 $ ionic cordova run android --livereload
 ```
-*
 * Build the app for Android :
 ```sh
 $ ionic cordova build android
