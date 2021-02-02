@@ -1,0 +1,45 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title slot="start">Scanner</ion-title>
+        <ion-icon style="font-size: 24px; padding-right: 4px;" slot="end" name="search" (click)="startBleScan()" color="primary"></ion-icon>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div *ngIf="scannedDevices.length; else noDevicesScanned">
+        <div class="device" *ngFor="let scannedDevice of scannedDevices">
+            <ion-grid>
+                <ion-row>
+                    <ion-col class="ion-text-start" size="auto">
+                        <div class="rssi-circle">
+                            <ion-label class="device-rssi">{{scannedDevice.rssi}}</ion-label>
+                            <br>
+                            <ion-label class="device-rssi">dBm</ion-label>
+                        </div>
+                    </ion-col>
+                    <ion-col class="ion-text-start" size="auto">
+                        <ion-label class="device-name">{{scannedDevice.name || "UnNamed"}} </ion-label>
+                        <br>
+                        <ion-label class="device-mac">{{scannedDevice.mac}}</ion-label>
+                    </ion-col>
+                    <ion-col>
+                    </ion-col>
+                    <ion-col>
+                    </ion-col>
+                    <ion-col class="ion-text-end" size="auto">
+                        <ion-button class="connect-button" color="primary" expand="block" (click)="connectToDevice(scannedDevice)"> Connect </ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+    </div>
+
+    <ng-template #noDevicesScanned>
+        <div style="padding-top: 30vh; text-align:center">
+            <ion-icon style="font-size: 72px;" name="search-outline" color="medium"></ion-icon>
+            <br>
+            <br>
+            <span>No BLE devices were scanned.</span>
+        </div>
+    </ng-template>
+</ion-content>

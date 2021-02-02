@@ -1,0 +1,38 @@
+ion-label.disconnect {
+    font-family: 'Lato-Black';
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+ion-grid {
+    text-align: center;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 4vh;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+ion-label.level {
+    font-family: 'Lato-BlackItalic';
+    font-size: 24px;
+}
+
+.round-progress-bar {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.progress-bar-level {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+ion-progress-bar {
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgb(56, 128, 255);
+}

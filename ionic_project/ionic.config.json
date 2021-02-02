@@ -1,0 +1,7 @@
+{
+  "name": "nrf52_tester_project_app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

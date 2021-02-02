@@ -1,0 +1,31 @@
+.device {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+ion-label.device-name {
+    font-family: 'Lato-Regular';
+    font-size: 14px;
+}
+
+ion-label.device-rssi {
+    font-family: 'Lato-Bold';
+    font-size: 14px;
+}
+
+ion-label.device-mac {
+    font-family: 'Lato-Light';
+    font-size: 12px;
+}
+
+ion-button.connect-button {
+    font-family: 'Lato-Regular';
+    font-size: 12px;
+}
+
+.rssi-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid #666;
+}

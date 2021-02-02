@@ -1,0 +1,159 @@
+<ion-content>
+    <!-- [START] slides -->
+    <ion-slides pager>
+        <!-- [START] slide1 -->
+        <ion-slide>
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <ion-label>
+                            Welcome to the <br><span style="color: rgb(53, 53, 145);">nRF52 DK test</span> <br> app
+                        </ion-label>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-icon class="slide1-icon" style="padding-top:4vh;" name="hardware-chip-outline"></ion-icon>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-icon class="slide1-icon" name="bluetooth-outline"></ion-icon>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-icon class="slide1-icon" name="phone-portrait-outline"></ion-icon>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-slide>
+        <!-- [END] slide1 -->
+
+        <!-- [START] slide2 -->
+        <ion-slide>
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <ion-label> Main features</ion-label>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <p>
+                            <ion-icon style="padding-right:10px;" name="radio-button-on"></ion-icon>
+                            Set the leds 3&4 states</p>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col class="ion-align-items-end">
+                        <ion-toggle disabled color="success"></ion-toggle>
+                    </ion-col>
+                    <ion-col class="ion-align-items-start">
+                        <ion-toggle disabled checked color="success"></ion-toggle>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <p>
+                            <ion-icon style="padding-right:10px;" name="radio-button-on"></ion-icon>
+                            Get the 4 Buttons states
+                        </p>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-button expand="block" disabled="true" color="primary"> Button1</ion-button>
+                    </ion-col>
+                    <ion-col>
+                        <ion-button expand="block" disabled="true" color="primary"> Button2</ion-button>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-button expand="block" disabled="true" color="primary"> Button3</ion-button>
+                    </ion-col>
+                    <ion-col>
+                        <ion-button expand="block" disabled="true" color="primary"> Button4</ion-button>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <p>
+                            <ion-icon style="padding-right:10px;" name="radio-button-on"></ion-icon>
+                            Get the potentio level (pin3)
+                        </p>
+                    </ion-col>
+                </ion-row>
+
+                <ion-row>
+                    <ion-col>
+                        <ion-icon style="font-size: 80px;" name="power" color="dark"></ion-icon>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <p>
+                            <ion-icon style="padding-right:10px;" name="radio-button-on"></ion-icon>
+                            Get the coin cell battery level
+                        </p>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-icon style="font-size: 80px;" name="battery-half" color="dark"></ion-icon>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-slide>
+        <!-- [END] slide2 -->
+
+        <!-- [START] slide3 -->
+        <ion-slide>
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <ion-icon style="font-size: 80px;" name="location-outline"></ion-icon>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <p>
+                            The app is using the <strong>Bluetooth</strong> only, but it requires the <strong>location</strong> to be enabled in order to scan for BLE devices.
+                            <br><br> The app doesn't use any location data.
+                        </p>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-label> Still confused ? </ion-label>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <p>
+                            Find more information about that, in the <strong>permissions</strong> section on the <strong>bluetooth-le Android developper</strong> guide.
+                            <br>
+                            <br>
+                            <a style="text-decoration: none;" target="_blank" href="https://developer.android.com/guide/topics/connectivity/bluetooth-le#permissions"> https://developer.android.com/guide/ topics/connectivity/bluetooth-le #permissions </a>
+                        </p>
+                    </ion-col>
+                </ion-row>
+
+                <ion-row>
+                    <ion-col>
+                    </ion-col>
+
+                    <ion-col>
+                    </ion-col>
+
+                    <ion-col>
+                        <ion-button expand="block" color="primary" (click)="exitIntro()">Continue</ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-slide>
+        <!-- [END] slide3 -->
+    </ion-slides>
+    <!-- [END] slides -->
+</ion-content>
