@@ -6,4 +6,4 @@ The project part 1 (nRF52 firmware) is under **nRF5SDK/v16/projects/ble_peripher
 
 I also added the android app (apk file), so you can easilly test that on your mobile too.
 
-I'll add the ionic project files, soon.
+The ionic project files are under the **ionic-project** folder.
