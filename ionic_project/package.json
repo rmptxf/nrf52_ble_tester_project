@@ -78,7 +78,7 @@
       "cordova-plugin-ble-central": {},
       "cordova-plugin-nativestorage": {},
       "cordova.plugins.diagnostic": {
-        "ANDROIDX_VERSION": "1.+"
+        "ANDROIDX_VERSION": "1.0.0"
       }
     },
     "platforms": [
